@@ -36,10 +36,10 @@ def mag_cache(cache_time=10):
                     k = parm_list[i]
                     local_dict[k] = v
 
-                #处理关键字参数
+                #关键字参数处理
                 local_dict.update(kwargs)
 
-                #处理默认参数
+                #默认参数处理
                 for k in parm_list:
                     if k not in local_dict.keys():
                         local_dict[k] = sign_parm[k].default
