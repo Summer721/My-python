@@ -1,6 +1,5 @@
 from functools import wraps
 import inspect
-import time
 import datetime
 
 def mag_cache(cache_time=10):
