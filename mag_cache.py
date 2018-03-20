@@ -3,6 +3,10 @@ import inspect
 import datetime
 
 def mag_cache(cache_time=10):
+    '''
+       this is decorator fucnction, it can cache key and set the cache_time.
+       Arguments to the cached function must be hashable.
+    '''
     def _cache(fn):
 
         cache_dict = {}
