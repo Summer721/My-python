@@ -1,0 +1,7 @@
+# myansible用法:
+# 1.先用Options创建options对象；
+# 2.Runner类初始化runner对象，options作为参数传入
+# 3.	options = Options(private_key_file='/etc/ansible/id_dsa')
+    	tqm = Runner('./hosts.txt', options)
+    	ret = tqm.run(module_args='df -h')
+
